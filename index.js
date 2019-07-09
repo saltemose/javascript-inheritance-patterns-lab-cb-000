@@ -78,15 +78,14 @@ Rectangle.prototype.area = function () {
 function Square(sideLength) {
   Rectangle.call(this, sideLength, sideLength);
   this.sideLength = sideLength;
-}
-
-Square.prototype.listProperties = function() {
+  this.listProperties = function() {
     let propertyList = "";
     for (const property in this) {
       if (this.hasOwnProperty(property)) {
         propertyList += this[property];
       }
     return propertyList;
+    }
   }
 }
 
