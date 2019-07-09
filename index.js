@@ -45,11 +45,11 @@ function Polygon(sides) {
 Polygon.prototype = Object.create(Shape.prototype);
 Polygon.prototype.constructor = Polygon;
 Polygon.prototype.perimeter = function() {
-  var total = 0;
-  this.sides.forEach(side => {
-    total += side.length
-  });
-  return total;
+  var p = 0;
+  for (let i = 0; i < this.numberOfSides(); i++) {
+    p += this.sides[i].length;
+  }
+  return(p);
 }
 
 Polygon.prototype.numberOfSides = function() {
