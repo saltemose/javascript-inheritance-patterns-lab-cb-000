@@ -25,10 +25,10 @@ function Circle (radius) {
   this.radius = radius;
 }
 
-Circle.prototype.diameter = function () {
+Circle.prototype.diameter = function() {
     return this.radius * this.radius;
   }
-Circle.prototype.area = function () {
+Circle.prototype.area = function() {
     return Math.PI * this.radius ** 2;
   }
 Circle.prototype.circumference = function() {
