@@ -25,16 +25,15 @@ function Circle (radius) {
   this.radius = radius;
 }
 
-  Shape.prototype.diameter = function () {
+Circle.prototype.diameter = function () {
     return this.radius * this.radius;
   }
-  this.area = function () {
+.area = function () {
     return Math.PI * this.radius ** 2;
   }
   this.circumference = function() {
     return Math.PI * this.diameter();
   }
-}
 
 Circle.prototype = Object.create(Shape.prototype);
 Circle.prototype.constructor = Circle;
