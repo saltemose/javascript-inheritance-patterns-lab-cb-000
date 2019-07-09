@@ -31,7 +31,7 @@ this.diameter = function() {
 this.area = function() {
     return Math.PI * this.radius ** 2;
   }
-Circle.prototype.circumference = function() {
+this.circumference = function() {
     return Math.PI * this.diameter();
   }
 
