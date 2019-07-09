@@ -37,7 +37,7 @@ function Circle (radius) {
 Circle.prototype = Object.create(Shape.prototype);
 Circle.prototype.constructor = Circle;
 
-function Polygon (sides) {
+function Polygon(sides) {
   Shape.call(this);
   this.sides = sides;
 }
