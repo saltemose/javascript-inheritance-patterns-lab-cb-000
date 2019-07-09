@@ -26,7 +26,7 @@ function Circle (radius) {
 }
 
   Shape.prototype.diameter = function () {
-    return radius * radius;
+    return this.radius * this.radius;
   }
   this.area = function () {
     return Math.PI * this.radius ** 2;
