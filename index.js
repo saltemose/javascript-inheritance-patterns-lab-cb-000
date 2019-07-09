@@ -23,7 +23,9 @@ Shape.prototype.move = function(x,y) {
 function Circle (radius) {
   Shape.call(this);
   this.radius = radius;
-  this.diameter = function () {
+}
+
+  Shape.prototype.diameter = function () {
     return radius * radius;
   }
   this.area = function () {
